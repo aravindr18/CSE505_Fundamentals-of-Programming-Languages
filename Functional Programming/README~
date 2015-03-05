@@ -1,0 +1,8 @@
+The following project implements a lamda calculus operation in Simple Meta Language (SML)
+
+We represent a lambda term by the ML concrete type 
+datatype term = V of string | L of string * term | A of term * term
+
+The implementation illustrates a function show:term->string which produces a string represention of the ML term. The output is kept consistent with the lambda calculus representation. 
+
+The function alpha: term*term->boolean checks the alpha equivalence of two lambda term.

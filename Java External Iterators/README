@@ -1,0 +1,9 @@
+The following code implements an external iterator for inorder traversal of a generic binary search tree (BST),
+The following implementation uses this iterator to define the equality of two BSTs.
+The external iterator is generic and supports two public methods: a boolean function
+done(), which tests whether the iterator has any more values to yield, and a function next(), which
+returns the next value if the iterator is not yet done. It contains other helper methods, which
+are declared private.
+The equality test is made to repeatedly obtain one value from each tree, in alternating fashion, and
+compared with these values for equality. It returns false if the values are not equal (mismatch). If there
+are no mismatches and the iterators are done at the same time, the equality test returns true.

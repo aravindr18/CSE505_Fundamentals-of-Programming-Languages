@@ -1,0 +1,13 @@
+The following is the implementation of Delegation Design pattern to replace class inheritance. 
+
+An important technique in the study of Design Patterns is the use of `delegation' to replace
+`class inheritance'. A systematic way for doing this transformation is to extend this technique 
+so that the inheritance of attributes and methods, and also method over-riding
+are handled. Applying the resulting technique to the program in Delegation.java which defines four
+classes, C1, C11, C111, and C112, where the classes C111 and C112 extend C11 which in turn
+extends C1.
+The result of the transformation is four classes called D1, D11, D111, and D112 which
+correspond to C1, C11, C111, and C112 respectively.
+The classes D1, D11, D111, and D112 implement interfaces I1, I11, I111 and I112
+respectively, where the interfaces I111 and I112 inherit from I11 which in turn
+inherit from I1. 
